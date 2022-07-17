@@ -10,7 +10,8 @@ Usage
     print(repr(States.Dnipropetrovsk))
     
 **Get information about a place**
-
+    
+    from AlertsInUkraine import AlertsAPI
     key = input("Your key: ")
     id = int(input("Your id: "))
 
