@@ -11,13 +11,13 @@ Usage
         
 **Get id**
 
-    from AlertsInUkraine import States
+    from alerts_in_ukraine import States
     
     print(repr(States.Dnipropetrovsk))
     <States.Dnipropetrovsk: 3>
 **Get information about a place**
     
-    from AlertsInUkraine import AlertsAPI
+    from alerts_in_ukraine import AlertsAPI
     
     key = input("Your key: ")
     id = int(input("Your id: "))
