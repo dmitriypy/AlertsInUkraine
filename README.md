@@ -1,5 +1,5 @@
 # AlertsInUkraine
-Unofficial API for alerts.in.ua in Python
+Unofficial SDK for alerts.in.ua in Python
 
 Get key
 -----
