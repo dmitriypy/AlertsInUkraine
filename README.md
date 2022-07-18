@@ -14,17 +14,66 @@ Usage
     from alerts_in_ukraine import States
     
     print(repr(States.Dnipropetrovsk))
+    
     <States.Dnipropetrovsk: 3>
+    
+**Get all id's**
+
+    from alerts_in_ukraine import AlertsAPI
+    
+    key = input("Your key: ")
+    id = int(input("Your id: "))
+    
+    siren = AlertsAPI(key, id)
+    print(siren.get_alert())
+    
+    Your key: mykey
+    Your id: 0
+    
+    {
+    "states": [
+        {
+        "id": 1,
+        "name": "Вінницька область",
+        "name_en": "Vinnytsia oblast",
+        "alert": false,
+        "changed": "2022-04-05T06:12:52+03:00"
+        },
+        {
+        "id": 2,
+        "name": "Волинська область",
+        "name_en": "Volyn oblast",
+        "alert": false,
+        "changed": "2022-04-05T06:13:06+03:00"
+        },
+        # ...
+    ],
+    "last_update": "2022-04-05T06:15:10.333210918+03:00"
+    }
+
 **Get information about a place**
     
     from alerts_in_ukraine import AlertsAPI
     
     key = input("Your key: ")
     id = int(input("Your id: "))
-
+    
     siren = AlertsAPI(key, id)
     print(siren.get_alert())
-    {'state': {'id': 3, 'name': 'Дніпропетровська область', 'name_en': 'Dnipropetrovsk oblast', 'alert': False, 'changed': '2022-07-18T09:54:05+03:00'}, 'last_update': '2022-07-18T11:18:08.04873156Z'}
+    
+    Your key: mykey
+    Your id: 3
+    
+    {
+    "state": {
+        "id": 3,
+        "name": "Дніпропетровська область",
+        "name_en": "Dnipropetrovsk oblast",
+        "alert": false,
+        "changed": "2022-04-05T06:13:12+03:00"
+    },
+    "last_update": "2022-04-05T06:15:10.333210918+03:00"
+    }
 
 License
 -------
