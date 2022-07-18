@@ -12,7 +12,7 @@ class AlertsAPI:
         if self.id is None:
             r = requests.get(self.url + "states", headers={"X-API-Key": self.key})
         else:
-            r = requests.get(f"{self.url + 'states/' + str(self.id)}", headers={"X-API-Key": self.key})
+            r = requests.get(f"{self.url}states/{self.id}", headers={"X-API-Key": self.key})
         return r.json()
     
     def alerts_history(self):
