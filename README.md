@@ -14,7 +14,7 @@ Usage
     from AlertsInUkraine import States
     
     print(repr(States.Dnipropetrovsk))
-    
+    <States.Dnipropetrovsk: 3>
 **Get information about a place**
     
     from AlertsInUkraine import AlertsAPI
@@ -23,8 +23,8 @@ Usage
     id = int(input("Your id: "))
 
     siren = AlertsAPI(key, id)
-    print(siren.get_alerts())
-        
+    print(siren.get_alert())
+    {'state': {'id': 3, 'name': 'Дніпропетровська область', 'name_en': 'Dnipropetrovsk oblast', 'alert': False, 'changed': '2022-07-18T09:54:05+03:00'}, 'last_update': '2022-07-18T11:18:08.04873156Z'}
 
 License
 -------
