@@ -3,7 +3,7 @@ import requests
 from enum import Enum
 
 
-class Alerts_API:
+class AlertsAPI:
     def __init__(self, key, id_):
         self.key: str = key
         self.url: str = f"https://alerts.com.ua/api/states/{id_}"
