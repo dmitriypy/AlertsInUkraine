@@ -1,5 +1,5 @@
 # AlertsInUkraine
-Unofficial SDK for alerts.in.ua in Python
+Unofficial SDK for alerts.in.ua in Python, that i made with my Capybara <3
 
 Get key
 -----
