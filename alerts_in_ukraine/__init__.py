@@ -8,6 +8,6 @@ class AlertsAPI:
         self.url: str = f"https://alerts.com.ua/api/states/{id_}"
 
     def get_alert(self):
-        """Request to API for get info about alerts."""
+        """Request to API for get info about alert."""
         r = requests.get(self.url, headers={"X-API-Key": self.key})
         return r.json()
